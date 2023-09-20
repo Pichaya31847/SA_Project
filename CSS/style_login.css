@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    width: 100vw;
+    height: 100vh;
+}
+
+body{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+    background-image: url(bg/background.jpg);
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+}
+
+.blurred-box{
+    position: relative;
+    width: 350px;
+    height: 420px;
+    top: 230;
+    left: calc(50% - 175px);
+    background: inherit;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.blurred-box::after{
+    content:'' ;
+    width: 400px;
+    height: 320px;
+    background: inherit;
+    position: absolute;
+    left: -20px;
+    right: 0;
+    top: -25px;
+    bottom: 0;
+    box-shadow: inset 0 0 0 200px rgba(78, 78, 78, 0.384);
+    filter: blur(5px);
+}
+
+.blurred-box1{
+    position: relative;
+    width: 350px;
+    height: 320px;
+    top: calc(50% - 240px);
+    left: calc(50% - 175px);
+    background: inherit;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.blurred-box1::after{
+    content:'' ;
+    width: 400px;
+    height: 440px;
+    background: inherit;
+    position: absolute;
+    left: -20px;
+    right: 0;
+    top: -25px;
+    bottom: 0;
+    box-shadow: inset 0 0 0 200px rgba(78, 78, 78, 0.384);
+    filter: blur(5px);
+}
+
+.user-login-box{
+    position: relative;
+    margin-top: 30px;
+    text-align: center;
+    z-index: 1;
+}
+
+.word1{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.word2{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.word2:hover{
+    margin-top: 15px;
+    margin-bottom: 15px ;
+    color: rgb(240, 194, 69);
+}
+
+.word3{
+    margin-top: 15px;
+    margin-bottom: 7px;
+    margin-right: 190;
+    color: #fff;
+}
+
+.word4{
+    margin-top: 15px;
+    margin-bottom: 7px;
+    margin-right: 155;
+    color: #fff;
+}
+
+.word5{
+    margin-top: 15px;
+    margin-bottom: 7px;
+    margin-right: 182;
+    color: #fff;
+}
+
+.word6{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 130;
+    color: #fff;
+}
+
+input.user-username{
+    margin-bottom: 4px !important;
+}
+
+select{
+    background: rgb(255, 255, 255);
+    display: block;
+    width: 70%;
+    height: 11%;
+    opacity: 0.4;
+    border-radius: 2px;
+    padding: 15px 15px;
+    border: none;
+    margin: 0 auto;
+    outline: none;
+}
+
+input.user-username, input.user-password{
+    display: block;
+    width: 70%;
+    height: 10%;
+    opacity: 0.4;
+    border-radius: 2px;
+    padding: 15px 15px;
+    border: none;
+    margin: 0 auto;
+    outline: none;
+}
+
+
+input.button {
+    padding: 10px 18px;
+    font-size: 15px;
+    background: #1a3969;
+    width: 70%;
+    border: none;
+    border-radius: 4px;
+    color: #f4f4f4;
+    transition: all 0.2s ease;
+}
+input.button:hover {
+    opacity: 0.9;
+}
+input.button:focus {
+    box-shadow: 0px 0px 0px 3px black;
+}
+
+h1{
+    font-size: 26px;
+}
+
+h2{
+    font-size: 17px;
+}
+
+h3{
+    font-size: 13px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+h3:hover{
+    font-size: 13px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: rgb(75, 72, 248);
+}
+
+a{
+    text-decoration: none;
+}
+
+a.forgot{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    right: 220;
+    color: white;
+}
+
+.tab {
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 2;
+    top: 0
+}
+    
+.tab a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    z-index: 2;
+}
+    
+.tab a.right {
+    float: right;
+    z-index: 2;
+}
+    
+.tab a.id_student {
+    background-color: #ddd;
+    color: black;
+    z-index: 2;
+}
+    
+.tab a:hover {
+    background-color: #ddd;
+    color: black;
+    z-index: 2;
+}
+    
+.tab a.active {
+    background-color: #666;
+    color: white;
+    z-index: 2;
+}  
+
+input.button1 {
+    padding: 10px 18px;
+    font-size: 15px;
+    background: #fc9004;
+    width: 70%;
+    border: none;
+    border-radius: 4px;
+    color: #f4f4f4;
+    transition: all 0.2s ease;
+}
+input.button1:hover {
+    opacity: 0.9;
+}
+input.button1:focus {
+    box-shadow: 0px 0px 0px 3px black;
+}
